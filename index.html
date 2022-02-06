@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beck Kanno 🤖 Product Designer</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/locomotive.css">
 
   <meta name="robots" content="index,follow,noodp">
   <!-- All Search Engines -->
@@ -32,19 +33,22 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
 </head>
 <body>
 
   
-  <div class="font-body bg-primary-100 text-white scroll-smooth">
+  <div class="font-body bg-primary-100 text-white scroll-smooth" data-scroll-container>
 
-    <div class="scrollbar-thin scrollbar-thumb-green-900 scrollbar-track-black h-screen scroll-smooth">
+    <div class="scrollbar-thin scrollbar-thumb-green-900 scrollbar-track-black h-screen scroll-smooth data">
 
       <div class="md:ml-10 lg:p-12 p-4 lg:ml-20 mt-12 lg:mt-2 visible scroll-smooth">
   
         <!-- Hero Section -->
 
-        <div class="content">
+        <div class="content"  data-scroll data-scroll-speed="2.5">
           <div class="flex">
             <img src="img/header.svg" alt="header-icon">
           </div>
@@ -98,13 +102,13 @@
 
         <!-- Featured Projects -->
     
-        <div class="transition2">
+        <div class="">
           <div class="text-5xl mt-24 font-semibold scroll-smooth transition2">
             <h1>Featured Projects<span class="text-green-500">.</span></h1>
           </div>
   
-          <section>
-            <header class="mt-16 md:mr-12 lg:mr-20 rounded-xl bg-zinc-900 space-y-4 p-6 sm:px-8 sm:py-2 xl:px-8 xl:py-6 scroll-smooth">
+          <section class="transition2">
+            <header class="mt-16 md:mr-12 lg:mr-20 rounded-xl bg-zinc-900 space-y-4 p-6 sm:px-8 sm:py-2 xl:px-8 xl:py-6 scroll-smooth"  data-scroll data-scroll-speed="2.5">
               <div class="flex items-center justify-between">
                 <h2 class="font-semibold text-lg mt-4">Featured Projects<span class="text-green-500">.</span></h2>
               </div>
@@ -145,9 +149,9 @@
   
           <!-- Contact Section -->
   
-          <div class="text-center text-2xl font-semibold mt-24 mb-14 scroll-smooth">
-            <h1 class="text-3xl">I'm interested in cool stuff<span class="text-green-500">.</span></h1> 
-            <h1>Are you minding a project?</h1>
+          <div class="transition2 text-center text-2xl font-semibold mt-24 mb-14 scroll-smooth" data-scroll-container>
+            <h1  data-scroll data-scroll-speed="2.5" class="text-3xl">I'm interested in cool stuff<span class="text-green-500">.</span></h1> 
+            <h1  data-scroll data-scroll-speed="2.5">Are you minding a project?</h1>
   
             <div class="mt-10">
               <a class="text-md text-center text-amber-300 hover:text-amber-500" href="mailto:drkannobeck@gmail.com" title="email me">Let's talk</a>  
@@ -205,9 +209,7 @@
 
   </script>
 
-
-
- 
+  <script src="app/script.js"></script>
 
   <!-- Designed & Developed by Beck Kanno -->
 

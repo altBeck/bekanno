@@ -6,8 +6,7 @@
 
 - [Repo](https://github.com/altBeck/bekanno "<bekanno> Repo")
 
-- [Live](<Homepage url> "Live View")
+- [Live](<https"//jusbeck.netlify.app> "Live View")
 
 - [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
 
-- [API](<API Link> "API")

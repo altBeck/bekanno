@@ -211,12 +211,17 @@
       ease: Power4.easeOut
     })
 
-    tl.from('.transition2',{
-      y: '-10%',
+    gsap.from(".transition2", {
+      scrollTrigger: {
+        trigger: '.transition2',
+        start: "top bottom"
+      },
+      y: 50,
       opacity: 0,
-      duration: 1.2,
-      ease: Power2.easeOut
+      duration: 2,
+      stagger: .6
     })
+
 
   </script>
 

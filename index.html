@@ -214,12 +214,12 @@
     gsap.from(".transition2", {
       scrollTrigger: {
         trigger: '.transition2',
-        start: "top center"
+        start: "top bottom"
       },
-      y: 50,
+      y: -50,
       opacity: 0,
-      duration: 1.1,
-      stagger: 0.8
+      duration: 2.5,
+      ease: Power2.easeOut
     })
 
 
